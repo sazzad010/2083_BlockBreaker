@@ -136,6 +136,7 @@ function moveBall(){
 
     //Lose on missing paddle
     if(ball.y + ball.size > canvas.height){
+        alert("Game over");
     }
 }
 
@@ -198,9 +199,11 @@ update();
 //Targetting the right and left arrow keys
 function keyDown(e){
     if(e.key === 'Right' || e.key === 'ArrowRight'){
+
         paddle.x +=3 ;
     } else if(e.key === 'Left' || e.key === 'ArrowLeft'){
         paddle.x -=3 ;
+
     } 
 }
 
