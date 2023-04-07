@@ -142,7 +142,10 @@ function moveBall(){
 
 //Funcion to increase score as block is hit
 function increaseScore(){
-    
+    let score=0
+    function bricks(brick){
+        score++;
+    }
 }
 
 //Make all blocks appear
