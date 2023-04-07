@@ -91,6 +91,9 @@ function drawScore(){
 //Function to move paddle on the canvas
 function movePaddle(){
     paddle.x += paddle.dx;
+    
+
+
 
     //Surrounding wall detection
     //To the right side
@@ -196,14 +199,17 @@ update();
 //Targetting the right and left arrow keys
 function keyDown(e){
     if(e.key === 'Right' || e.key === 'ArrowRight'){
-paddle.x += 2
+
+        paddle.x +=3 ;
     } else if(e.key === 'Left' || e.key === 'ArrowLeft'){
-paddle.x -= 2
+        paddle.x -=3 ;
+
     } 
 }
 
 //Keyup event function
 function keyUp(e){
+    
     // console.log(e.key);
     if(e.key === 'Right' || e.key === 'ArrowRight' || e.key === 'Left' || e.key === 'ArrowLeft'){
 
@@ -213,6 +219,7 @@ function keyUp(e){
 //Keyboard event handlers
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
+
 
 
 
