@@ -94,11 +94,16 @@ function movePaddle(){
 
     //Surrounding wall detection
     //To the right side
-    
+  if(canvas.width <= ball.x ||ball.x < 0){
+    ball.dx=ball.dx * (-1)
+  }
+
 
     //Surrounding wall detection
     //To the left side
-    
+    if(canvas.height <= ball.y ||ball.y < 0){
+        ball.dy=ball.dy * (-1)
+      }
 }
 
 //Function to move ball on the canvas
