@@ -133,7 +133,6 @@ function moveBall(){
 
     //Lose on missing paddle
     if(ball.y + ball.size > canvas.height){
-        
     }
 }
 
@@ -152,7 +151,9 @@ function showAllBlocks(){
 }
 
 function showGamePauseText(){
-    
+    if( e.key === Escape){
+        alert ("Game Paused");
+    }
 }
 
 function showLevelCompleteText(){
